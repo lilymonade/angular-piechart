@@ -68,8 +68,8 @@ Content to display will be center in the middle of the pie chart. You can add as
 
 You can pass these attributes to the directive to set a custom look and feel for the plugin.
 
-| Attributes           | Default       | Description
-|:--------------------:|:-------------:|:--------------:
+| Attributes                  | Default       | Description
+|:---------------------------:|:-------------:|:--------------:
 | **bar-color** | #ef1e25 | The color of the circular bar. You must write a valid `css` color string.
 | **track-color** | #f2f2f2 | The color of the track. You must write a valid `css` color string or `false` to disable rendering.
 | **scale-color** | false | The color of the scale lines. You must write a valid `css` color string or `false` to disable rendering.

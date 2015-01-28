@@ -88,7 +88,7 @@ You can pass these attributes to the directive to set a custom look and feel for
 All events will only be called if `animate === true`.
 
 | Events                     | Description
-|:---------------------------|-------------:
+|:---------------------------|:-------------
 | **onStart(from, to)** | Called at the `start` of any animation.
 | **onStep(from, to, currentValue)** | Called `during` animations providing the current value.
 | **onStop(from, to)** | Called at the `end` of any animation.

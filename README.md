@@ -83,5 +83,16 @@ You can pass these attributes to the directive to set a custom look and feel for
 | **animate** | true | `Boolean` for an animation of the bar growing.
 | **animate-duration** | 1000 | Time in `milliseconds` for the animation duration. Only use if `animate === true`
 
+## Events
+
+All events will only be called if `animate === true`.
+
+| Events                      | Description
+|:---------------------------:|:-------------:
+| **onStart(from, to)** | Called at the `start` of any animation.
+| **onStep(from, to, currentValue)** | Called `during` animations providing the current value.
+| **onStop(from, to)** | Called at the `end` of any animation.
+
+
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

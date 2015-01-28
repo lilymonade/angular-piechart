@@ -24,13 +24,13 @@
 
 You can also use [bower](http://www.bower.io) to install the component:
 
-```
+```javascript
 $ bower install --save angular-piechart
 ```
 
 ### Angular.js
 
-To work, the plugin needs to be execute in an `Angular.js` application.
+To work, the plugin needs to be executed in an `Angular.js` application.
 
 You need to include `css` and `javascript` files in your project.
 
@@ -46,6 +46,20 @@ You need to include `css` and `javascript` files in your project.
         <script src="/path/to/bower/components/angular-piechart/dist/scripts/angular-piechart.min.js"></script>
     </body>
 </html>
+```
+
+When files are imported, you must include plugin in your application:
+
+```javascript
+angular.module('myApp', ['ngPieChart']);
+```
+
+Now, the directive is accessible in all HTML files of your application:
+
+```javascript
+<ngpiechart>
+    <div>Content to display</div>
+</ngpiechart>
 ```
 
 ## License

@@ -62,7 +62,7 @@ Now, the directive is accessible in all HTML files of your application:
 </ngpiechart>
 ```
 
-Content to display will be center in the middle of the pie chart. You can add as much content as you want to a limit of the size of the pie chart.
+Content to display will be center in the middle of the pie chart. You can add as much content as you want until the limit size of the pie chart.
 
 ## Customize
 

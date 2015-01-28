@@ -22,9 +22,9 @@
 
 ### Installation
 
-You can also use [bower](http://www.bower.io) to install the component:
+Use [bower](http://www.bower.io) to install the component:
 
-```javascript
+```
 $ bower install --save angular-piechart
 ```
 
@@ -57,10 +57,18 @@ angular.module('myApp', ['ngPieChart']);
 Now, the directive is accessible in all HTML files of your application:
 
 ```javascript
-<ngpiechart>
+<ngpiechart progression="35" total="100">
     <div>Content to display</div>
 </ngpiechart>
 ```
+
+Content to display will be center in the middle of the pie chart. You can add as much content as you want to a limit of the size of the pie chart.
+
+## Customize
+
+| Directive attribute    | Default       | Description
+|:----------------------:|:-------------:|:--------------:
+| bar-color              | #ef1e25 | The color of the curcular bar. You can either pass a valid css color string, or a function that takes the current percentage as a value and returns a valid css color string.
 
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

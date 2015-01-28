@@ -32,16 +32,16 @@ $ bower install --save angular-piechart
 
 To work, the plugin needs to be execute in an `Angular.js` application.
 
+You need to include `css` and `javascript` file in your project.
+
 ```javascript
 <html>
     <head>
         ...
-
         <script src="/path/to/bower/components/angular-piechart/dist/styles/angular-piechart.min.js"></script>
     </head>
     <body>
         ...
-
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
         <script src="/path/to/bower/components/angular-piechart/dist/scripts/angular-piechart.min.js"></script>
     </body>

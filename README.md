@@ -64,6 +64,8 @@ Now, the directive is accessible in all HTML files of your application:
 
 Content to display will be center in the middle of the pie chart. You can add as much content as you want until the limit size of the pie chart.
 
+Add `css` in each line of your content to customize display.
+
 ## Customize
 
 You can pass these attributes to the directive to set a custom look and feel for the plugin.
@@ -75,6 +77,11 @@ You can pass these attributes to the directive to set a custom look and feel for
 | **scale-color** | false | The color of the scale lines. You must write a valid `css` color string or `false` to disable rendering.
 | **scale-length** | 5 | Length of the scale lines (reduces the radius of the chart).
 | **line-cap** | butt | Defines how the ending of the bar line looks like. Possible values are: `butt`, `round` and `square`.
+| **line-width** | 3 | Width of the chart line in `px`.
+| **size** | 110 | Size of the pie chart in `px`. It will always be a square.
+| **rotate** | 0 | Rotation of the complete chart in `degrees`.
+| **animate** | true | `Boolean` for an animation of the bar growing.
+| **animate-duration** | 1000 | Time in `milliseconds` for the animation duration. Only use if `animate === true`
 
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

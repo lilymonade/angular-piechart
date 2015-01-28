@@ -70,7 +70,11 @@ You can pass these attributes to the directive to set a custom look and feel for
 
 | Attributes           | Default       | Description
 |:--------------------:|:-------------:|:--------------:
-| **bar-color** | #ef1e25 | The color of the circular bar. You must pass a valid css color string.
+| **bar-color** | #ef1e25 | The color of the circular bar. You must write a valid `css` color string.
+| **track-color** | #f2f2f2 | The color of the track. You must write a valid `css` color string or `false` to disable rendering.
+| **scale-color** | false | The color of the scale lines. You must write a valid `css` color string or `false` to disable rendering.
+| **scale-length** | 5 | Length of the scale lines (reduces the radius of the chart).
+| **line-cap** | butt | Defines how the ending of the bar line looks like. Possible values are: `butt`, `round` and `square`.
 
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

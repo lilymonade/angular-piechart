@@ -2,10 +2,13 @@
   "name": "angular-piechart",
   "version": "1.0.0",
   "authors": [
-    "Nicolas Jessel <nicolas.jessel@icloud.com>"
+    "Nicolas Jessel <akanass@icloud.com>"
   ],
-  "description": "Angular.js lightweight plugin to draw simple, animated pie charts for single values",
-  "main": ["dist/angular-piechart.min.js", "dist/angular-piechart.min.css"],
+  "description": "Angular.js lightweight plugin to render simple, animated and retina optimized pie charts",
+  "main": [
+    "dist/scripts/angular-piechart.min.js",
+    "dist/styles/angular-piechart.min.css"
+  ],
   "keywords": [
     "angular",
     "pie",

@@ -1,0 +1,54 @@
+{
+  "name": "angular-piechart",
+  "version": "1.0.0",
+  "description": "Angular.js lightweight plugin to render simple, animated and retina optimized pie charts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/njl07/angular-piechart.git"
+  },
+  "directories": {
+    "src": "./src",
+    "dist": "./dist"
+  },
+  "keywords": [
+    "angular",
+    "pie",
+    "chart",
+    "gauge",
+    "html5",
+    "css3",
+    "canvas",
+    "animate"
+  ],
+  "author": {
+    "name": "Nicolas Jessel",
+    "email": "akanass@icloud.com",
+    "url": "https://github.com/njl07"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/njl07/angular-piechart/blob/master/LICENSE.md"
+  },
+  "bugs": {
+    "url": "https://github.com/njl07/angular-piechart/issues"
+  },
+  "homepage": "https://github.com/njl07/angular-piechart",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-angular-filesort": "^1.0.4",
+    "gulp-concat": "^2.4.3",
+    "gulp-csso": "^0.2.9",
+    "gulp-filter": "^2.0.0",
+    "gulp-flatten": "0.0.4",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-ng-annotate": "^0.5.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.5.2",
+    "gulp-sass": "^1.3.2",
+    "gulp-size": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "require-dir": "^0.1.0",
+    "uglify-save-license": "^0.4.1"
+  }
+}

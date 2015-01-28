@@ -84,7 +84,11 @@ ngPieChart.directive('ngpiechart', ['$timeout', function($timeout) {
 
       attrs.$observe('trackColor', function(value)
       {
-        if ( typeof(value) === 'string' && value.trim() !== '' )
+        if (typeof(value) === 'string' && value.trim() === 'false')
+        {
+          options.trackColor = false;
+        }
+        else if ( typeof(value) === 'string' && value.trim() !== '' && value.trim() !== 'true' )
         {
           options.trackColor = value.trim();
         }

@@ -67,8 +67,8 @@ Content to display will be center in the middle of the pie chart. You can add as
 ## Customize
 
 | Directive attribute    | Default       | Description
-|:----------------------:|:-------------:|:--------------:
-| bar-color              | #ef1e25 | The color of the curcular bar. You can either pass a valid css color string, or a function that takes the current percentage as a value and returns a valid css color string.
+|:----------------------:|:-------------:|:--------------
+| **bar-color**              | #ef1e25 | The color of the curcular bar. You can either pass a valid css color string, or a function that takes the current percentage as a value and returns a valid css color string.
 
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

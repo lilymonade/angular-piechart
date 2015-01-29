@@ -19,6 +19,13 @@
     "canvas",
     "animate"
   ],
+  "ignore": [
+    "gulp/",
+    "src/",
+    ".gitignore",
+    "gulpfile.js",
+    "package.json"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/njl07/angular-piechart"
 }

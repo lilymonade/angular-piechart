@@ -15,7 +15,8 @@
     * [Angular.js](#angularjs)
 * [Customize](#customize)
 * [Events](#events)
-* [Browser Support](#browser-support)
+* [Dynamic value](#dynamic-value)
+* [Browser support](#browser-support)
 * [License](#license)
 
 ## Get started
@@ -51,7 +52,7 @@ You need to include `css` and `javascript` files in your project.
 When files are imported, you must include plugin in your application:
 
 ```javascript
-angular.module('myApp', ['ngPieChart']);
+var app = angular.module('myApp', ['ngPieChart']);
 ```
 
 Now, the directive is accessible in all `HTML` files of your application:
@@ -96,8 +97,6 @@ All events will only be called if `animate === true`.
 Events' functions must be implemented in the controller of the application:
 
 ```javascript
-var app = angular.module('myApp', ['ngPieChart']);
-
 app.controller('PieChartController', ['$scope', function($scope)
 {
     $scope.onStart = function(from, to)
@@ -132,6 +131,41 @@ When implementations are done, you can insert attributes in the directive:
 ```
 
 You can only implement the event that you need.
+
+## Dynamic value
+
+To have a dynamic value in the pie chart, you must bind `progression` and `total` value to your controller:
+
+```javascript
+app.controller('PieChartController', ['$scope', function($scope)
+{
+    $scope.progression = 70;
+    $scope.total = 100;
+}]);
+```
+
+After, add these attributes in the directive with binding value:
+
+```javascript
+<div ng-controller="PieChartController">
+    <ngpiechart progression="progression" total="total">
+        <div>Content to display</div>
+    </ngpiechart>
+</div>
+```
+
+Now, you can have, by example, an input text to change value of pie chart:
+
+```javascript
+<div ng-controller="PieChartController">
+    <ngpiechart progression="progression" total="total">
+        <div>Content to display</div>
+    </ngpiechart>
+    <input type="text" ng-model="progression" value="{{progression}}" />
+</div>
+```
+
+Try it, it's magic.
 
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

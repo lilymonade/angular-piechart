@@ -168,6 +168,7 @@ Now, you can have, by example, an input text to change the value of pie chart:
 Try it, it's magic.
 
 **Note:**
+
 **If `progression` and/or `total` are not setted, default values will be respectively `0` and `100`.**
 
 ## License

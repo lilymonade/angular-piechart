@@ -54,7 +54,7 @@ When files are imported, you must include plugin in your application:
 angular.module('myApp', ['ngPieChart']);
 ```
 
-Now, the directive is accessible in all HTML files of your application:
+Now, the directive is accessible in all `HTML` files of your application:
 
 ```javascript
 <ngpiechart progression="35" total="100">
@@ -64,7 +64,7 @@ Now, the directive is accessible in all HTML files of your application:
 
 Content to display will be center in the middle of the pie chart. You can add as much content as you want until the limit size of the pie chart.
 
-Add `css` in each line of your content to customize display.
+Add `CSS` in each line of your content to customize display.
 
 ## Customize
 
@@ -72,9 +72,9 @@ You can pass these attributes to the directive to set a custom look and feel for
 
 | Attributes                  | Default       | Description
 |:---------------------------:|:-------------:|:--------------
-| **bar-color** | #ef1e25 | The color of the circular bar. You must write a valid `css` color string.
-| **track-color** | #f2f2f2 | The color of the track. You must write a valid `css` color string or `false` to disable rendering.
-| **scale-color** | #dfe0e0 | The color of the scale lines. You must write a valid `css` color string or `false` to disable rendering.
+| **bar-color** | #ef1e25 | The color of the circular bar. You must write a valid `CSS` color string.
+| **track-color** | #f2f2f2 | The color of the track. You must write a valid `CSS` color string or `false` to disable rendering.
+| **scale-color** | #dfe0e0 | The color of the scale lines. You must write a valid `CSS` color string or `false` to disable rendering.
 | **scale-length** | 5 | Length of the scale lines (reduces the radius of the chart).
 | **line-cap** | butt | Defines how the ending of the bar line looks like. Possible values are: `butt`, `round` and `square`.
 | **line-width** | 3 | Width of the chart line in `px`.

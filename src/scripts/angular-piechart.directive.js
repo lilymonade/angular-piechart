@@ -2,7 +2,7 @@
 /**
  * <ngpiechart bar-color="#2C3E50"
  *             track-color="red"
- *             scale-color="false"
+ *             scale-color="#dfe0e0"
  *             scale-length="3"
  *             line-cap="butt"
  *             line-width="10"
@@ -53,7 +53,7 @@ ngPieChart.directive('ngpiechart', ['$timeout', function($timeout) {
       var defaultOptions = {
         barColor: '#ef1e25',
         trackColor: '#f2f2f2',
-        scaleColor: false,
+        scaleColor: '#dfe0e0',
         scaleLength: 5,
         lineCap: 'butt',
         lineWidth: 3,

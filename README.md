@@ -4,7 +4,7 @@
 
 * highly customizable
 * very easy to implement
-* resolution independent (retina optimized)
+* independent resolution (retina optimized)
 * uses `requestAnimationFrame` for smooth animations on modern devices
 * works in all modern browsers, even in IE7+ with [excanvas](https://code.google.com/p/explorercanvas/wiki/Instructions)
 
@@ -31,7 +31,7 @@ $ bower install --save angular-piechart
 
 ### Angular.js
 
-To work, the plugin needs to be executed in an `Angular.js` application.
+To work, this plugin needs to be executed in an `Angular.js` application.
 
 You need to include `css` and `javascript` files in your project.
 
@@ -49,7 +49,7 @@ You need to include `css` and `javascript` files in your project.
 </html>
 ```
 
-When files are imported, you must include plugin in your application:
+Once files loaded, you must include this plugin in your application:
 
 ```javascript
 var app = angular.module('myApp', ['ngPieChart']);
@@ -63,13 +63,13 @@ Now, the directive is accessible in all `HTML` files of your application:
 </ngpiechart>
 ```
 
-Content to display will be center in the middle of the pie chart. You can add as much content as you want until the limit size of the pie chart.
+Content to display will be centered in the middle of the pie chart. You can add as much content as you want until the limit size of your pie chart.
 
-Add `CSS` in each line of your content to customize display.
+Add `CSS` for each line of your content to customize the view.
 
 ## Customize
 
-You can pass these attributes to the directive to set a custom look and feel for the plugin.
+You can add multiple attributes to the directive to set up a custom look and feel for that plugin.
 
 | Attributes                  | Default       | Description
 |:---------------------------:|:-------------:|:--------------
@@ -94,7 +94,7 @@ All events will only be called if `animate === true`.
 | **onStep(from, to, currentValue)** | **on-step** | Called `during` animations providing the current value.
 | **onStop(from, to)** | **on-stop** | Called at the `end` of any animation.
 
-Events' functions must be implemented in the controller of the application:
+Functions of events must be implemented in the application's controller:
 
 ```javascript
 app.controller('PieChartController', ['$scope', function($scope)
@@ -130,11 +130,11 @@ When implementations are done, you can insert attributes in the directive:
 </div>
 ```
 
-You can only implement the event that you need.
+You can only add events that you need.
 
 ## Dynamic value
 
-To have a dynamic value in the pie chart, you must bind `progression` and `total` value to your controller:
+To have a dynamic value in the pie chart, you must bind `progression` and `total` value in your controller:
 
 ```javascript
 app.controller('PieChartController', ['$scope', function($scope)
@@ -144,7 +144,7 @@ app.controller('PieChartController', ['$scope', function($scope)
 }]);
 ```
 
-After, add these attributes in the directive with binding values:
+After that, add these attributes in the directive with binding values:
 
 ```javascript
 <div ng-controller="PieChartController">
@@ -154,7 +154,7 @@ After, add these attributes in the directive with binding values:
 </div>
 ```
 
-Now, you can have, by example, an input text to change the value of the pie chart:
+Now, you can have, for example, an input text to change the value of the pie chart:
 
 ```javascript
 <div ng-controller="PieChartController">
@@ -169,7 +169,7 @@ Try it, it's magic.
 
 **Note:**
 
-**If `progression` and/or `total` are not setted, default values will be respectively `0` and `100`.**
+**If `progression` and/or `total` are not defined, default values will be respectively `0` and `100`.**
 
 ## Browser support
 

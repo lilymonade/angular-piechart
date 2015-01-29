@@ -131,7 +131,7 @@ When implementations are done, you can insert attributes in the directive:
 </div>
 ```
 
-You can only implemented the event that you need.
+You can only implement the event that you need.
 
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

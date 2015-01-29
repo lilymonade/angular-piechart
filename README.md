@@ -144,7 +144,7 @@ app.controller('PieChartController', ['$scope', function($scope)
 }]);
 ```
 
-After, add these attributes in the directive with binding value:
+After, add these attributes in the directive with binding values:
 
 ```javascript
 <div ng-controller="PieChartController">
@@ -154,7 +154,7 @@ After, add these attributes in the directive with binding value:
 </div>
 ```
 
-Now, you can have, by example, an input text to change the value of pie chart:
+Now, you can have, by example, an input text to change the value of the pie chart:
 
 ```javascript
 <div ng-controller="PieChartController">

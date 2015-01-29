@@ -93,7 +93,45 @@ All events will only be called if `animate === true`.
 | **onStep(from, to, currentValue)** | **on-step** | Called `during` animations providing the current value.
 | **onStop(from, to)** | **on-stop** | Called at the `end` of any animation.
 
+Events' functions must be implemented in the controller of the application:
 
+```javascript
+var app = angular.module('myApp', ['ngPieChart']);
+
+app.controller('PieChartController', ['$scope', function($scope)
+{
+    $scope.onStart = function(from, to)
+    {
+        console.log(from); // display `from` value
+        console.log(to);   // display `to` value
+    };
+
+    $scope.onStep = function(from, to, currentValue)
+    {
+        console.log(from);           // display `from` value
+        console.log(to);             // display `to` value
+        console.log(currentValue);   // display `current` value
+    };
+
+    $scope.onStop = function(from, to)
+    {
+        console.log(from); // display `from` value
+        console.log(to);   // display `to` value
+    };
+}]);
+```
+
+When implementations are done, you can insert attributes in the directive:
+
+```javascript
+<div ng-controller="PieChartController">
+    <ngpiechart progression="35" total="100" on-start="onStart" on-step="onStep" on-stop="onStop">
+        <div>Content to display</div>
+    </ngpiechart>
+</div>
+```
+
+You can only implemented the event that you need.
 
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

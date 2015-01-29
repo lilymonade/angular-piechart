@@ -56,8 +56,8 @@ ngPieChart.directive('ngpiechart', ['$timeout', function($timeout) {
         scaleColor: '#dfe0e0',
         scaleLength: 5,
         lineCap: 'butt',
-        lineWidth: 3,
-        size: 110,
+        lineWidth: 5,
+        size: 200,
         rotate: 0,
         animate: {
           duration: 1000,

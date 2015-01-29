@@ -77,8 +77,8 @@ You can pass these attributes to the directive to set a custom look and feel for
 | **scale-color** | #dfe0e0 | The color of the scale lines. You must write a valid `CSS` color string or `false` to disable rendering.
 | **scale-length** | 5 | Length of the scale lines (reduces the radius of the chart).
 | **line-cap** | butt | Defines how the ending of the bar line looks like. Possible values are: `butt`, `round` and `square`.
-| **line-width** | 3 | Width of the chart line in `px`.
-| **size** | 110 | Size of the pie chart in `px`. It will always be a square.
+| **line-width** | 5 | Width of the chart line in `px`.
+| **size** | 200 | Size of the pie chart in `px`. It will always be a square.
 | **rotate** | 0 | Rotation of the complete chart in `degrees`.
 | **animate** | true | `Boolean` for an animation of the bar growing.
 | **animate-duration** | 1000 | Time in `milliseconds` for the animation duration. Only use if `animate === true`

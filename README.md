@@ -171,5 +171,16 @@ Try it, it's magic.
 
 **If `progression` and/or `total` are not setted, default values will be respectively `0` and `100`.**
 
+## Browser support
+
+Native support:
+
+* Chrome
+* Safari
+* FireFox
+* Opera
+* Internet Explorer 9+
+* Support for Internet Explorer 7 and 8 with [excanvas](https://code.google.com/p/explorercanvas/wiki/Instructions) polyfill.
+
 ## License
 Copyright (c) 2014 Nicolas Jessel. Licensed under the [MIT license](https://github.com/njl07/angular-piechart/blob/master/LICENSE.md).

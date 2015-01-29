@@ -42,7 +42,7 @@ You need to include `css` and `javascript` files in your project.
     </head>
     <body>
         ...
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+        <script src="/path/to/bower/components/angular/angular.min.js"></script>
         <script src="/path/to/bower/components/angular-piechart/dist/scripts/angular-piechart.min.js"></script>
     </body>
 </html>

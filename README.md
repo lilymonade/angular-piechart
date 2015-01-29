@@ -71,7 +71,7 @@ Add `css` in each line of your content to customize display.
 You can pass these attributes to the directive to set a custom look and feel for the plugin.
 
 | Attributes                  | Default       | Description
-|:---------------------------:|:-------------:|:--------------:
+|:---------------------------:|:-------------:|:--------------
 | **bar-color** | #ef1e25 | The color of the circular bar. You must write a valid `css` color string.
 | **track-color** | #f2f2f2 | The color of the track. You must write a valid `css` color string or `false` to disable rendering.
 | **scale-color** | false | The color of the scale lines. You must write a valid `css` color string or `false` to disable rendering.
